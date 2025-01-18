@@ -133,7 +133,8 @@
     <div class="container1">
         <div class="sol">
             <h1>Facebook</h1>
-            <p>Atam Feyzbukda varsan? Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup bitenleri paylaşmanı sağlar.</p>
+            <p>Atam Feyzbukda varsan? Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup bitenleri paylaşmanı
+                sağlar.</p>
             <h2 id="registration"></h2>
         </div>
         <div class="right">
@@ -148,47 +149,47 @@
     </div>
 
     <script>
-        let Ad = prompt('Adıvı Daxil elee');
-let sifre = prompt('Şifrəni də de, Deməsən buraxmıram');
+        let ad = prompt('Adıvı Daxil elee');
+        let sifre = prompt('Şifrəni də de, Deməsən buraxmıram');
 
-let netice;
+        let netice;
 
-switch (`${Ad}-${sifre}`) { 
-  case 'Jalal-Aliyev':
-    netice = 'Admin, Xos gəldin, səfalar gətirdin';
-    break;
+        switch (true) {
+            case ad == 'Jalal' && sifre == 'Aliyev':
+                netice = 'Admin, Xos gəldin, səfalar gətirdin';
+                break;
 
 
-  case 'Hüseyn-1234':
-    netice = 'Hüseyn Bəyy, Saytımıza Xos Gelmisiniz';
-    break;
+            case ad == 'Huseyn' && sifre == '1234':
+                netice = 'Hüseyn Bəyy, Saytımıza Xos Gelmisiniz';
+                break;
 
-  case 'Fatimə-1234':
-    netice = 'Fatos Xanım, Saytımıza Xos Gəldin';
-    break;
+            case ad == 'Fatimə' && sifre == '1234':
+                netice = 'Fatos Xanım, Saytımıza Xos Gəldin';
+                break;
 
-  case 'Murad-1234':
-    netice = 'Murad Bəyy, Saytımıza Xos Gəldin';
-    break;
+            case ad == 'Murad' && sifre == '1234':
+                netice = 'Murad Bəyy, Saytımıza Xos Gəldin';
+                break;
 
-  case 'İsmayıl-1234':
-    netice = 'Ismayil Bəyy, Saytımıza Xos Gəldin';
-    break;
+            case ad == 'İsmayıl' && sifre == '1234':
+                netice = 'Ismayil Bəyy, Saytımıza Xos Gəldin';
+                break;
 
-  case 'Elmaddin-1234':
-    netice = 'Elmeddin Aşkm, Saytımıza Xos Gəldin';
-    break;
+            case ad == 'Elmaddin' && sifre == '1234':
+                netice = 'Elmeddin Aşkm, Saytımıza Xos Gəldin';
+                break;
 
-  case 'Elvira-1234':
-    netice = 'Elvira Xanım, Saytımıza Xos Gəldin';
-    break;
+            case ad == 'Elvira' && sifre == 'xanım':
+                netice = 'Elvira Xanım, Saytımıza Xos Gəldin';
+                break;
 
-  default:
-    netice = 'Parol və ya Kullanıcı adı səhvdir';
-    break;
-}
+            default:
+                netice = 'Parol və ya Kullanıcı adı səhvdir';
+                break;
+        }
 
-document.getElementById('registration').innerHTML = netice;
+        document.getElementById('registration').innerHTML = netice;
     </script>
 </body>
 
