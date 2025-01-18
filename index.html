@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b7bbc2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #1877f2;
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+
+        .container1 {
+            background-color: white;
+            display: flex;
+            max-width: 1000px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+
+        }
+
+        .sol {
+            padding: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #606770;
+        }
+
+        .right {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .sol p {
+            font-size: 18px;
+            color: #606770;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #006eff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-style: 18px;
+            margin-top: 12px;
+        }
+
+        button.new-account {
+            background-color: #42b72a;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1877f2;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                width: 80%;
+                padding: 20px;
+            }
+
+            .sol,
+            .right {
+                padding: 20px;
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            form {
+                width: 100%;
+            }
+
+            button {
+                font-size: 18px;
+            }
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="sol">
+            <h1>Facebook</h1>
+            <p>Atam Feyzbukda varsan? Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup bitenleri paylaşmanı sağlar.</p>
+            <h2 id="registration"></h2>
+        </div>
+        <div class="right">
+            <form>
+                <input type="email" placeholder="E-posta veya Telefon Numarası">
+                <input type="password" placeholder="Şifre">
+                <button type="submit">Giriş Elə</button>
+                <a href="#">Şifrəni Unutdun qaqaş?</a>
+                <button type="button" class="new-account">Yeni hesab yarat <br>(Yaratmaq Allaha Məxsusdur)</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let Ad = prompt('Adıvı Daxil elee');
+let sifre = prompt('Şifrəni də de, Deməsən buraxmıram');
+
+let netice;
+
+switch (`${Ad}-${sifre}`) { 
+  case 'Jalal-Aliyev':
+    netice = 'Admin, Xos gəldin, səfalar gətirdin';
+    break;
+
+
+  case 'Hüseyn-1234':
+    netice = 'Hüseyn Bəyy, Saytımıza Xos Gelmisiniz';
+    break;
+
+  case 'Fatimə-1234':
+    netice = 'Fatos Xanım, Saytımıza Xos Gəldin';
+    break;
+
+  case 'Murad-1234':
+    netice = 'Murad Bəyy, Saytımıza Xos Gəldin';
+    break;
+
+  case 'İsmayıl-1234':
+    netice = 'Ismayil Bəyy, Saytımıza Xos Gəldin';
+    break;
+
+  case 'Elmaddin-1234':
+    netice = 'Elmeddin Aşkm, Saytımıza Xos Gəldin';
+    break;
+
+  case 'Elvira-1234':
+    netice = 'Elvira Xanım, Saytımıza Xos Gəldin';
+    break;
+
+  default:
+    netice = 'Parol və ya Kullanıcı adı səhvdir';
+    break;
+}
+
+document.getElementById('registration').innerHTML = netice;
+    </script>
+</body>
+
+</html>
